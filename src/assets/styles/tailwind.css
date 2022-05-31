@@ -1,0 +1,52 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'base.css';
+
+/* Custom classes */
+
+@layer base {
+	/* Button */
+	.btn {
+		@apply rounded-lg text-xl bg-slate-800 hover:bg-blue-500 text-white px-4 py-3;
+	}
+	/* Pagination */
+	.pagination-prev,
+	.pagination-next {
+		@apply text-blue-500 p-3 text-base font-semibold capitalize border border-transparent hover:border-slate-500 hover:rounded max-w-sm;
+	}
+	.pagination-next {
+		@apply text-right;
+	}
+	.pagination-prev:before {
+		content: '← Previously ';
+		@apply block text-slate-500 text-sm uppercase font-normal;
+	}
+	.pagination-next:before {
+		content: 'Up next →';
+		@apply block text-slate-500 text-sm uppercase font-normal;
+	}
+	.footer {
+		content-visibility: auto;
+	}
+}
+
+.gatsby-highlight {
+	@apply bg-slate-700 rounded-xl shadow-xl my-10 p-3 w-full;
+}
+
+.gatsby-highlight pre[class*='language-'] {
+	@apply bg-transparent;
+}
+
+.gatsby-highlight pre[class*='language-'].line-numbers {
+	@apply py-0 pl-14 overflow-hidden;
+}
+
+@layer components {
+	/* Components */
+}
+
+@layer utilities {
+	/* Text effects */
+}
