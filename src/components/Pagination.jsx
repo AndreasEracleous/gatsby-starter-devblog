@@ -23,7 +23,7 @@ const Pagination = ({ length, callBackResult }) => {
 			<Link
 				to={url}
 				onClick={() => handleClick(index)}
-				className={`relative rounded-md border border-blue shadow-sm px-4 py-2 text-sm ${
+				className={`relative rounded-lg border border-blue-500 shadow-sm px-4 py-2 text-sm ${
 					isSelected ? 'bg-blue-500 text-white' : 'bg-white text-blue-500'
 				}${disableClass}`}
 				disabled={isSelected}

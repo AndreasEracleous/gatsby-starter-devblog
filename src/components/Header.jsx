@@ -7,7 +7,7 @@ const Header = () => {
 
 	return (
 		<header className="flex py-9">
-			<Link className="text-2xl tracking-wide" to="/">
+			<Link className="text-xl tracking-wide" to="/">
 				<span className="text-black font-semibold">{siteName}</span>
 			</Link>
 		</header>

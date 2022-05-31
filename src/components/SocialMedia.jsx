@@ -6,7 +6,7 @@ import GithubIcon from '../assets/svg/github.svg'
 const SocialMedia = () => {
 	return (
 		<div className="flex justify-end space-x-4 mt-3 ml-3">
-			<p className="text-xl my-auto">Follow me on:</p>
+			<p className="text-md my-auto">Follow me on:</p>
 			<a
 				href="https://twitter.com/AndreasFrontDev"
 				aria-label="Twitter"
